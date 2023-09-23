@@ -15,4 +15,10 @@ public class DemoController {
     public String showLeaders() {
         return "leaders";
     }
+
+    // request mapping for /systems
+    @GetMapping("/systems")
+    public String showSystems() {
+        return "admins";
+    }
 }
