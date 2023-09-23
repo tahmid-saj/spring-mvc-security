@@ -28,7 +28,12 @@
                                         <div>
                                             <!-- Check for login error -->
                                             <div th:if="${param.error}">
-                                                <i class="failed">Sorry you entered an invalid username / password</i>
+                                                <i class="alert alert-danger">Sorry you entered an invalid username / password</i>
+                                            </div>
+
+                                            <!-- Check for logout -->
+                                            <div th:if="${param.logout}">
+                                                <i class="alert alert-danger">You have been logged out</i>
                                             </div>
 
                                             <div>
